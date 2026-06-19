@@ -1,0 +1,16 @@
+grocery_inventory  = {
+    "Milk": (113, "Dairy"),
+    "Eggs": (116, "Dairy"),
+    "Bread": (117, "Bakery"),
+    "Apples": (141, "Produce")
+}
+
+bread_details = grocery_inventory.get("Bread")
+print(F"Details of Bread: {bread_details}")
+
+grocery_inventory["Cookies"] = (143, "Bakery")
+print(F"Inventory after adding Cookies: {grocery_inventory}")
+
+grocery_inventory.pop("Eggs")
+print(F"Inventory after removing Eggs: {grocery_inventory}")
+
